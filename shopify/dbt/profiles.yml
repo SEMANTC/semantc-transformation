@@ -1,0 +1,10 @@
+transformation:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: "{{ var('PROJECT_ID') }}"
+      dataset: "bq_{{ var('USER_ID') }}_transformed"
+      threads: 4
+      OPTIONAL_CONFIG: VALUE

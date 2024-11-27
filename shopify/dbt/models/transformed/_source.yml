@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    config:
+      enabled: true
+    schema: "bq_{{ var('USER_ID') }}_raw"
+    tables:
+      - name: xero_accounts
